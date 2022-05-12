@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<meta lang="pt-br">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CALCULO IMC</title>
+        <link rel="stylesheet" href="imc.css">
+        <style> @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');</style>
+    </head>
+
+    <body class="degrade">
+        <main>
+            <div class="container">
+                <div class="title">INFORTECH</div>
+                <div class="input">
+                    <label class="cor">Nome:</label>
+                    <input type="text" id="nome"required placeholder="Nome">
+                </div>
+                <div class="input">
+                    <label class="cor">Altura<span style="color:red">*</span></label>
+                    <input type="text" id="altura" required placeholder="1.80">
+                </div>
+                <div class="input">
+                    <label class="cor">Peso<span style="color:red">*</span></label>
+                    <input type="text" id="peso" required placeholder="80">
+                </div>
+                <button id="calcular" onclick="imc()">Calcular</button>
+
+
+                <div class="result" id="resultado"></div>
+                <audio src="racionais.mp3" autoplay controls loop></audio>
+            </div>
+            
+        </main>
+        
+        <script src="./imc.js"></script>
+    </body> 
+</html>
